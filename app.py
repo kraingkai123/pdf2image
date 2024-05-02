@@ -27,7 +27,7 @@ class convertpdf2image(Resource):
         pdf2img(pdf_path,num_pages)
         return data['pdf_file']
    
-api.add_resource(convertpdf2image, '/hello')
+api.add_resource(convertpdf2image, '/convertpdf2image')
 
 if __name__ == '__main__':
     app.run(debug=True)
